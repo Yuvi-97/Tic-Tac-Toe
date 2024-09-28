@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+body{
+    text-align: center;
+}
+.container{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0vmin;
+}
+h1{
+    margin-top: 10px;
+}
+.box{
+    background-color: white;
+    color: black;
+    height: 18vmin;
+    width: 18vmin;
+    border: 2px solid black;
+    border-radius: 20%;
+    font-size: 10vmin;
+}
+
+#resetbtn{
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    background-color: #1e90ff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease,transform 0.2s ease;
+    box-shadow: 10px;
+}
+
+#resetbtn:hover {
+    background-color: #63a4ff;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 15px rgb(0,0,0,1);
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 3rem;
+}
+#msg{
+    font-size: 5vmin;
+}
+#newgame {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #1e90ff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+#newgame:hover {
+    background-color: #63a4ff; /* Lighter blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Increase shadow for a "lifting" effect */
+}
+
+.hide{
+    display: none;
+}
